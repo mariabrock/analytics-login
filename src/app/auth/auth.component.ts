@@ -15,9 +15,6 @@ export class AuthComponent {
     if (!form.valid) {
       return;
     }
-    const email = form.value.email;
-    const password = form.value.password;
-
     this.router.navigate(['/landing'])
 
     form.reset();
