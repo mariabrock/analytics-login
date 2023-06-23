@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 100%;
+  width: 50%;
+}
+
+//button {
+//  padding: 2px 22px;
+//  background-color: #f57e2a !important;
+//  border-bottom-color: #f57e2a !important;
+//}
+//
+//button:hover,
+//.btn-default:hover {
+//  background-color: #fda500 !important;
+//}
+//
+//.button,
+//a.button {
+//  width: auto;
+//  clear: both;
+//  background: #f57e2a !important;
+//}
+//
+//.button-wrapper {
+//  display: table;
+//}
