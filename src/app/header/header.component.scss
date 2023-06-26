@@ -4,7 +4,7 @@ a:hover {
 }
 
 .logo {
-  margin-top: 2rem;
+  margin: 2rem;
   float: left;
 }
 
@@ -35,19 +35,19 @@ a:hover {
 }
 
 .secondary-nav .navbar-nav>li>a {
-  color: #1d722d;
+  color: #fff;
   line-height: 40px;
   text-transform: uppercase;
   font-size: 16px;
 }
 
 nav.navbar.secondary-nav {
-  background: white;
+  //background: white;
   min-height: 40px;
 }
 
 .secondary {
-  background: transparent;
+  //background: transparent;
   color: #fda500;
 }
 
