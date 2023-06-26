@@ -4,27 +4,27 @@
   background-color: #313233;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
 p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
-#footer-area a {
+a {
   color: #2db50e;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
 }
 
-#footer-area p {
+p {
   margin: 0 0 10px;
 }
 
-#footer-area a:focus,
-#footer-area a:hover {
+a:focus,
+a:hover {
   color: #247751;
   text-decoration: underline;
 }
@@ -34,26 +34,40 @@ p {
   color: #c4c4c4;
   margin: 0;
   padding: 8px 0 1px 0;
-  text-align: left;
+  text-align: center;
 }
 
-#footer-area .mandatory-links {
-  text-align: left;
-  font-size: 10px;
-  padding-top: 10px;
+.mandatory-links {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 1rem;
+
 }
 
-#footer-area .site-footer {
+.site-footer {
   background-color: #ebebeb;
   padding: 10px 0;
   margin: 0;
 }
 
-#footer-area .site-info {
+.site-info {
   padding: 30px 20px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
-@media (min-width: 300px) {
+.img-responsive {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
 
+@media (max-width: 900px) {
+  .battelle {
+    margin-left: 7rem;
+  }
+
+  .science {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
 }
