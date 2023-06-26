@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-size: 16px;
@@ -11,39 +7,25 @@ body {
 a:hover {
   background-color: #fda500;
 }
-h1, h2 {
-  color: white;
-}
-
-.container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
 .logo {
+  margin-top: 2rem;
   float: left;
 }
 
-.site-title {
-  float: right;
+.spacer {
+  flex: 1 1 auto;
 }
+
+//.site-title {
+//  float: right;
+//}
 
 .site-title a {
   color: #fff;
   text-decoration: none;
   line-height: 75px;
   font-size: 22px;
-}
-
-.navbar.navbar-default {
-  background-color: #1d722d;
-  min-height: 75px;
 }
 
 .nav {
@@ -69,7 +51,7 @@ nav.navbar.secondary-nav {
   min-height: 40px;
 }
 
-.secondary-nav .navbar-nav>li>a:hover {
+.secondary {
   background: transparent;
   color: #fda500;
 }
@@ -90,25 +72,6 @@ nav.navbar.secondary-nav {
   color: #007833;
   line-height: 40px;
   font-size: 1.1em;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px
-}
-
-.col-sm-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px
 }
 
 .nav {
@@ -138,9 +101,9 @@ nav.navbar.secondary-nav {
   float: left
 }
 
-.home-link {
-  color:#fff;
-}
+//.home-link {
+//  color:#fff;
+//}
 
 .container:after,
 .container:before,
@@ -153,7 +116,4 @@ nav.navbar.secondary-nav {
 .container:after,
 .row:after {
   clear: both
-}
-@media only screen and (max-width: 600px) {
-
 }
