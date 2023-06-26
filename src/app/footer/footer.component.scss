@@ -4,12 +4,8 @@
   background-color: #313233;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
-}
-
-p {
-  font-size: 12px;
 }
 
 a {
@@ -29,6 +25,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .branding-sponsor {
   background: #333;
   color: #c4c4c4;
@@ -39,9 +40,8 @@ a:hover {
 
 .mandatory-links {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 1rem;
-
 }
 
 .site-footer {
@@ -51,17 +51,27 @@ a:hover {
 }
 
 .site-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 30px 20px;
   font-size: 12px;
 }
 
-.img-responsive {
-  display: flex;
-  max-width: 100%;
-  height: auto;
+.battelle {
+  margin-left: 2rem;
 }
 
 @media (max-width: 900px) {
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .mandatory-links {
+    font-size: 12px;
+  }
+
   .battelle {
     margin-left: 7rem;
   }
