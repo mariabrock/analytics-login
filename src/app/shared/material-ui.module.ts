@@ -5,6 +5,9 @@ import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
+import { MatExpansionModule } from "@angular/material/expansion";
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { MatIconModule } from "@angular/material/icon";
     MatFormFieldModule,
     MatInputModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatExpansionModule
   ],
   exports: [
     CommonModule,
@@ -23,7 +29,10 @@ import { MatIconModule } from "@angular/material/icon";
     MatFormFieldModule,
     MatInputModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatExpansionModule
   ]
 })
 export class MaterialUiModule { }

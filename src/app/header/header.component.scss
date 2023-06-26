@@ -12,47 +12,11 @@ a:hover {
   flex: 1 1 auto;
 }
 
-//.site-title {
-//  float: right;
-//}
-
 .site-title a {
   color: #fff;
   text-decoration: none;
   line-height: 75px;
   font-size: 22px;
-}
-
-.nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none
-}
-
-.nav>li {
-  position: relative;
-  display: block
-}
-
-.secondary-nav .navbar-nav>li>a {
-  color: #fff;
-  line-height: 40px;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-nav.navbar.secondary-nav {
-  //background: white;
-  min-height: 40px;
-}
-
-.secondary {
-  //background: transparent;
-  color: #fda500;
-}
-
-.nav.navbar-nav {
-  float: right;
 }
 
 .navbar-nav>li>a {
@@ -61,12 +25,6 @@ nav.navbar.secondary-nav {
   display: inline-block;
   position: relative;
   text-decoration: none;
-}
-
-.secondary-nav .navbar-nav>li>a {
-  color: #007833;
-  line-height: 40px;
-  font-size: 1.1em;
 }
 
 .nav {
@@ -81,11 +39,6 @@ nav.navbar.secondary-nav {
   padding: 0 10px 0 15px;
 }
 
-.navbar {
-  position: relative;
-  min-height: 50px;
-}
-
 .navbar-nav {
   margin: 7.5px -15px;
   float: left;
@@ -95,10 +48,6 @@ nav.navbar.secondary-nav {
 .navbar-nav>li {
   float: left
 }
-
-//.home-link {
-//  color:#fff;
-//}
 
 .container:after,
 .container:before,

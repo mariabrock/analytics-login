@@ -68,6 +68,11 @@ a:hover {
     font-size: 12px;
   }
 
+  .site-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .mandatory-links {
     font-size: 12px;
   }
@@ -77,7 +82,7 @@ a:hover {
   }
 
   .science {
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-top: 1rem;
   }
 }
