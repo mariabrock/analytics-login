@@ -6,6 +6,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
+  position: static;
 }
 
 a {
@@ -13,10 +14,6 @@ a {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-}
-
-p {
-  margin: 0 0 10px;
 }
 
 a:focus,
@@ -34,7 +31,7 @@ a:hover {
   background: #333;
   color: #c4c4c4;
   margin: 0;
-  padding: 8px 0 1px 0;
+  padding: .25rem;
   text-align: center;
 }
 
@@ -58,10 +55,6 @@ a:hover {
   font-size: 12px;
 }
 
-.battelle {
-  margin-left: 2rem;
-}
-
 @media (max-width: 900px) {
 
   .footer {
@@ -71,18 +64,15 @@ a:hover {
   .site-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .mandatory-links {
     font-size: 12px;
   }
 
-  .battelle {
-    margin-left: 7rem;
+  .science {
+    padding: 1rem;
   }
 
-  .science {
-    margin-left: 3rem;
-    margin-top: 1rem;
-  }
 }
