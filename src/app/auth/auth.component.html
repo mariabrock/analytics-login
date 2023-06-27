@@ -1,5 +1,13 @@
 <div class="container">
+
   <div class="left">
+    <div class="site-title">
+      <h3 routerLink="">
+        <em>Bayesian Analytics</em> @ ORNL
+      </h3>
+      <p>Nunc congue nisi vitae suscipit. Nisl pretium fusce id velit ut. In nibh mauris cursus mattis. Felis imperdiet proin
+        fermentum leo vel orci porta. Senectus et netus et malesuada fames ac turpis.</p>
+    </div>
     <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <mat-form-field class="form-group">
           <mat-label>E-Mail</mat-label>
@@ -18,15 +26,35 @@
             ngModel required
           />
         </mat-form-field>
+      <p>By logging in, you agree to our <a routerLink="">Terms of Use</a>.</p>
         <div class="button-wrapper">
           <button mat-raised-button color="primary" type="submit">
             Login
           </button>
         </div>
     </form>
+
   </div>
 
   <div class="right">
-    <img src="./assets/graph(os).jpg" alt="green graph on a black background">
+    <img class="background-img" src="./assets/graph(os).jpg" alt="green graph on a black background">
+    <div class="fine-print">
+      <img class="doe-logo"  src="./assets/doe-logo_2x.png" alt="Department of Energy logo">
+      <p>US Department Of Energy</p>
+        <p>Portions of this system are designated Official Use Only (OUO). Accounts and access are restricted to Federal agencies,
+          Federal agency support contractors, and state emergency energy assurance coordinators.
+          <br>
+          <br>
+          NOTICE TO USERS: This computer is a Federal computer system and is the property of the United States Government. It is
+          for authorized use only. Users (authorized or unauthorized) have no explicit or implicit expectation of privacy. Any or
+          all uses of this system and all files on this system may be intercepted, monitored, recorded, copied, audited, inspected,
+          and disclosed to authorized site, Department of Energy, and law enforcement personnel, as well as authorized officials
+          of other agencies, both domestic and foreign. By using this system, the user consents to such interception, monitoring,
+          recording, copying, auditing, inspection, and disclosure at the discretion of authorized site or Department of Energy
+          personnel. Unauthorized or improper use of this system may result in administrative disciplinary action and civil and
+          criminal penalties. By continuing to use this system you indicate your awareness of and consent to the terms and conditions
+          of use of the Warning Banner and EAGLE-I™ Terms of Use. LOG OFF IMMEDIATELY if you do not agree to these terms and
+          conditions.</p>
+    </div>
   </div>
 </div>
