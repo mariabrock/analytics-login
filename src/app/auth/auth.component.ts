@@ -8,15 +8,16 @@ import { Router } from "@angular/router";
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent {
+  public showPassword: boolean;
 
   constructor(private router: Router) {}
 
   onSubmit(form: NgForm) {
     if (!form.valid) {
       return;
+    } else {
+      this.router.navigate(['/landing'])
     }
-    this.router.navigate(['/landing'])
-
     form.reset();
   }
 }

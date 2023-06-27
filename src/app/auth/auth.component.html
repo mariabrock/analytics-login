@@ -16,17 +16,30 @@
             class="form-control"
             name="email" email matInput
             ngModel required />
+          <mat-icon matSuffix>
+            <span class="material-symbols-outlined">mail</span>
+          </mat-icon>
         </mat-form-field>
         <mat-form-field class="form-group">
           <mat-label>Password</mat-label>
           <input
-            type="password" id="password"
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
             class="form-control" matInput
             name="password" minlength="6"
             ngModel required
           />
+          <mat-icon matSuffix
+            class="clickableIcon"
+            [fontIcon]="showPassword ? 'visibility' : 'visibility_off'"
+            (click)="showPassword = !showPassword"
+          >
+          </mat-icon>
         </mat-form-field>
-      <p>By logging in, you agree to our <a routerLink="">Terms of Use</a>.</p>
+      <div class="links">
+        <p><a routerLink="">Reset Password</a>.</p>
+        <p>By logging in, you agree to our <a routerLink="">Terms of Use</a>.</p>
+      </div>
         <div class="button-wrapper">
           <button mat-raised-button color="primary" type="submit">
             Login
