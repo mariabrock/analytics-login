@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   height: 100%;
   width: 100%;
 }
@@ -14,12 +14,40 @@ img {
 .left {
   display: flex;
   flex-direction: column;
+  justify-content: left;
   margin: 10rem;
+}
+
+.site-title {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.links {
+  font-size: 12px;
 }
 
 .right {
   display: flex;
   flex-direction: column;
+}
+
+.doe-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.fine-print {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  margin: 10rem 5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -35,5 +63,11 @@ img {
   }
   .left {
     margin: 6rem;
+  }
+
+  .fine-print {
+    position: absolute;
+    margin: 1rem;
+    text-align: center;
   }
 }
