@@ -1,37 +1,26 @@
-* {
-  box-sizing: border-box;
+
+.site-header {
+  background-color: #007833;
 }
 
-body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-a:hover {
-  background-color: #fda500;
-}
-h1, h2 {
+h2 {
   color: white;
-}
-
-.container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin: 4rem 3rem;
 }
 
 .logo {
+  padding: 2rem;
   float: left;
 }
 
-.site-title {
-  float: right;
+.spacer {
+  flex: 1 1 auto;
 }
 
 .site-title a {
@@ -41,74 +30,12 @@ h1, h2 {
   font-size: 22px;
 }
 
-.navbar.navbar-default {
-  background-color: #1d722d;
-  min-height: 75px;
-}
-
-.nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none
-}
-
-.nav>li {
-  position: relative;
-  display: block
-}
-
-.secondary-nav .navbar-nav>li>a {
-  color: #1d722d;
-  line-height: 40px;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-nav.navbar.secondary-nav {
-  background: white;
-  min-height: 40px;
-}
-
-.secondary-nav .navbar-nav>li>a:hover {
-  background: transparent;
-  color: #fda500;
-}
-
-.nav.navbar-nav {
-  float: right;
-}
-
 .navbar-nav>li>a {
   text-transform: uppercase;
   padding: 0;
   display: inline-block;
   position: relative;
   text-decoration: none;
-}
-
-.secondary-nav .navbar-nav>li>a {
-  color: #007833;
-  line-height: 40px;
-  font-size: 1.1em;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px
-}
-
-.col-sm-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px
 }
 
 .nav {
@@ -123,11 +50,6 @@ nav.navbar.secondary-nav {
   padding: 0 10px 0 15px;
 }
 
-.navbar {
-  position: relative;
-  min-height: 50px;
-}
-
 .navbar-nav {
   margin: 7.5px -15px;
   float: left;
@@ -136,10 +58,6 @@ nav.navbar.secondary-nav {
 
 .navbar-nav>li {
   float: left
-}
-
-.home-link {
-  color:#fff;
 }
 
 .container:after,
@@ -153,4 +71,21 @@ nav.navbar.secondary-nav {
 .container:after,
 .row:after {
   clear: both
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  h2 {
+    margin: 1rem;
+  }
+
+  .logo {
+    padding: 1rem;
+  }
+
 }

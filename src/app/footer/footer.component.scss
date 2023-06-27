@@ -1,26 +1,33 @@
-#footer-area {
+.footer {
+  width: 100%;
+  overflow: hidden;
   background-color: #313233;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
-  position: static;
 }
 
-#footer-area a {
+a {
   color: #2db50e;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 
-#footer-area p {
+p {
   margin: 0 0 10px;
 }
 
-#footer-area a:focus,
-#footer-area a:hover {
+a:focus,
+a:hover {
   color: #247751;
   text-decoration: underline;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 .branding-sponsor {
@@ -31,67 +38,51 @@
   text-align: center;
 }
 
-#footer-area .mandatory-links {
+.mandatory-links {
   text-align: center;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
-#footer-area .site-footer {
+.site-footer {
   background-color: #ebebeb;
   padding: 10px 0;
+  margin: 0;
 }
 
-#footer-area .site-footer:after,
-#footer-area .container:after {
-  content: '';
-  display: table;
-}
-
-#footer-area .site-info {
+.site-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 30px 20px;
   font-size: 12px;
 }
 
-#footer-area .container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto
+.battelle {
+  margin-left: 2rem;
 }
 
-#footer-area .row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
+@media (max-width: 900px) {
 
-#footer-area .col-md-3 {
-  width: 25%;
-}
-
-#footer-area .col-md-6 {
-  width: 50%;
-}
-
-#footer-area .col-md-3,
-#footer-area .col-md-6 {
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px
-}
-
-#footer-area .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto
-}
-
-@media (min-width: 768px) {
-  #footer-area .col-sm-3, #footer-area .col-sm-6 {
-    float: none;
+  .footer {
+    font-size: 12px;
   }
-  #footer-area .col-sm-3, #footer-area .col-sm-6 {
-    width: 10%;
+
+  .site-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mandatory-links {
+    font-size: 12px;
+  }
+
+  .battelle {
+    margin-left: 7rem;
+  }
+
+  .science {
+    margin-left: 3rem;
+    margin-top: 1rem;
   }
 }
