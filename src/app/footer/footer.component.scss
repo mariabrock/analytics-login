@@ -1,14 +1,15 @@
 .footer {
   width: 100%;
   overflow: hidden;
-  background-color: #313233;
+  background-color: #ebebeb;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 1.7;
   position:absolute;
   bottom:0;
-  height:200px;
+  height:150px;
   left:0;
   right:0;
 }
@@ -27,7 +28,8 @@ a:hover {
 }
 
 p {
-  margin: 1rem;
+  padding:0;
+  margin: 0;
 }
 
 .img-responsive {
@@ -38,9 +40,10 @@ p {
 .branding-sponsor {
   background: #333;
   color: #c4c4c4;
-  margin: 0;
-  padding: .25rem;
   text-align: center;
+  height: 100%;
+  padding:1rem;
+  margin: 0;
 }
 
 .mandatory-links {
@@ -51,7 +54,7 @@ p {
 
 .site-footer {
   background-color: #ebebeb;
-  padding: 2rem;
+  padding:0;
   margin: 0;
 }
 
@@ -59,8 +62,9 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: .5rem;
   font-size: 12px;
+  padding-top: 1rem;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
