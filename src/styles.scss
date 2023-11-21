@@ -18,8 +18,8 @@ $analytics-login-theme: mat.define-light-theme((
 @include mat.all-component-themes($analytics-login-theme);
 
 html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 body {

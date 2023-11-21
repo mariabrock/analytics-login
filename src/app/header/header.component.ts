@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  public loggedIn= false;
   constructor() {}
 
 }

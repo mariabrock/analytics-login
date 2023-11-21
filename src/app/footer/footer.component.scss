@@ -1,12 +1,17 @@
 .footer {
   width: 100%;
   overflow: hidden;
-  background-color: #313233;
+  background-color: #ebebeb;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 1.7;
-  position: static;
+  position:absolute;
+  bottom:0;
+  height:140px;
+  left:0;
+  right:0;
 }
 
 a {
@@ -22,6 +27,11 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  padding:0;
+  margin: 0;
+}
+
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -30,9 +40,10 @@ a:hover {
 .branding-sponsor {
   background: #333;
   color: #c4c4c4;
-  margin: 0;
-  padding: .25rem;
   text-align: center;
+  height: 100%;
+  padding:1rem;
+  margin: 0;
 }
 
 .mandatory-links {
@@ -43,7 +54,7 @@ a:hover {
 
 .site-footer {
   background-color: #ebebeb;
-  padding: 10px 0;
+  padding:0;
   margin: 0;
 }
 
@@ -51,8 +62,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 30px 20px;
   font-size: 12px;
+  padding-top: 1rem;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
