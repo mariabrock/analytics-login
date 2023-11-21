@@ -6,7 +6,11 @@
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
-  position: static;
+  position:absolute;
+  bottom:0;
+  height:200px;
+  left:0;
+  right:0;
 }
 
 a {
@@ -20,6 +24,10 @@ a:focus,
 a:hover {
   color: #247751;
   text-decoration: underline;
+}
+
+p {
+  margin: 1rem;
 }
 
 .img-responsive {
@@ -43,7 +51,7 @@ a:hover {
 
 .site-footer {
   background-color: #ebebeb;
-  padding: 10px 0;
+  padding: 2rem;
   margin: 0;
 }
 
@@ -51,7 +59,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 30px 20px;
+  padding: .5rem;
   font-size: 12px;
 }
 
