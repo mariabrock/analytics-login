@@ -8,26 +8,26 @@
       <p>Nunc congue nisi vitae suscipit. Nisl pretium fusce id velit ut. In nibh mauris cursus mattis. Felis imperdiet proin
         fermentum leo vel orci porta. Senectus et netus et malesuada fames ac turpis.</p>
     </div>
-    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+    <form  [formGroup]="authForm">
         <mat-form-field class="form-group">
           <mat-label>E-Mail</mat-label>
-          <input
-            type="email" id="email"
-            class="form-control"
-            name="email" email matInput
-            ngModel required />
+          <input matInput
+            type="email"
+            formControlName="email"
+            />
           <mat-icon matSuffix>
             <span class="material-symbols-outlined">mail</span>
           </mat-icon>
         </mat-form-field>
+        <mat-error *ngIf="showEmailError" class="email-error">
+          <p>Please enter a valid email address.</p>
+        </mat-error>
         <mat-form-field class="form-group">
           <mat-label>Password</mat-label>
-          <input
+          <input matInput
             [type]="showPassword ? 'text' : 'password'"
-            id="password"
-            class="form-control" matInput
-            name="password" minlength="6"
-            ngModel required
+            formControlName="password"
+            minlength="6"
           />
           <mat-icon matSuffix
             class="clickableIcon"
@@ -36,12 +36,15 @@
           >
           </mat-icon>
         </mat-form-field>
+        <mat-error *ngIf="showPasswordError" class="email-error">
+          <p>Password should be 8 characters.</p>
+        </mat-error>
       <div class="links">
         <p><a routerLink="">Reset Password</a>.</p>
         <p>By logging in, you agree to our <a routerLink="">Terms of Use</a>.</p>
       </div>
         <div class="button-wrapper">
-          <button mat-raised-button color="primary" type="submit">
+          <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="!authForm.valid">
             Login
           </button>
         </div>
