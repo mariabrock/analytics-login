@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NgForm } from "@angular/forms";
+import { Component, inject } from '@angular/core';
+import { FormControl, FormGroup, NgForm, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 
 @Component({
@@ -8,16 +8,26 @@ import { Router } from "@angular/router";
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent {
+  private router= inject(Router);
+
   public showPassword: boolean;
+  public showEmailError: boolean;
+  public showPasswordError: boolean;
 
-  constructor(private router: Router) {}
+  public authForm = new FormGroup<any>({
+    email: new FormControl<string>('', {validators: [Validators.required, Validators.email]}),
+    password: new FormControl<string>('', {validators: [Validators.required]}),
+  });
 
-  onSubmit(form: NgForm) {
-    if (!form.valid) {
+  constructor() {}
+
+  onSubmit() {
+    if (!this.authForm.valid) {
       return;
     } else {
       this.router.navigate(['/landing'])
+
     }
-    form.reset();
+    this.authForm.reset();
   }
 }

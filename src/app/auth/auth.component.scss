@@ -1,4 +1,4 @@
-.container {
+.authpage {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -6,7 +6,7 @@
 }
 
 img {
-  height: 60%;
+  height: 80%;
   width: 100%;
 }
 
@@ -50,6 +50,10 @@ form {
   text-align: center;
 }
 
+.fine-print > p{
+  line-height: 1.7;
+}
+
 @media only screen and (max-width: 900px) {
   .container {
     display: flex;
@@ -70,4 +74,5 @@ form {
     margin: 1rem;
     text-align: center;
   }
+
 }
