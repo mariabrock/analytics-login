@@ -11,12 +11,11 @@ export class AuthComponent {
   private router= inject(Router);
 
   public showPassword: boolean;
-  public regex = '{(^(.+)@(.+).(.+)$)}'
   public showEmailError: boolean;
   public showPasswordError: boolean;
 
   public authForm = new FormGroup<any>({
-    email: new FormControl<string>('', {validators: [Validators.required, Validators.pattern(this.regex)]}),
+    email: new FormControl<string>('', {validators: [Validators.required, Validators.email]}),
     password: new FormControl<string>('', {validators: [Validators.required]}),
   });
 
@@ -27,6 +26,7 @@ export class AuthComponent {
       return;
     } else {
       this.router.navigate(['/landing'])
+
     }
     this.authForm.reset();
   }
